@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Spark School</title>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script>
+        function initialize() {
+          var mapProp = {
+            center:new google.maps.LatLng(43.352914,17.793048),
+            zoom:15,
+            mapTypeId:google.maps.MapTypeId.ROADMAP,
+            scrollwheel: false
+          };
+
+          var image = {
+            url: 'css/images/icon-map.png',
+            size: new google.maps.Size(64, 64)
+          };
+
+          var map=new google.maps.Map(document.getElementById("contact-map"), mapProp);
+
+          var marker = new google.maps.Marker({
+                        map: map,
+                        position: mapProp.center,
+                        animation: google.maps.Animation.DROP,
+                        title: "NSoft, Bleiburških žrtava, Mostar",
+                        icon: image,
+                        scrollwheel: mapProp.scrollwheel
+                    });
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+<body>
+    <header>
+        <div class="frame frame-header">
+            <div class="logo-nav-wrapper">
+                <a class="logo" href="index.html"></a>
+                <nav class="main-menu">
+                    <ul>
+                        <li>
+                            <a href="#" class="active">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Out Game</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="search">
+                <input class="search-input" type="text" placeholder="Search" />
+                <span class="search-icon"></span>
+            </div>
+        </div>
+    </header>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <main>
+        <section class="poster">
+            <div class="poster-slides">
+                <a class="poster-navigation poster-navigation-previous">
+                    <div class="poster-navigation-icon poster-navigation-previous-icon"></div>
+                </a>
+                <a class="poster-navigation poster-navigation-next">
+                    <div class="poster-navigation-icon poster-navigation-next-icon"></div>
+                </a>
+                <!-- DOM and jQuery course: Create several slides here -->
+                <div class="poster-slide">
+                    <div class="frame">
+                        <div class="poster-item">
+                            <h2 class="poster-title">A beautiful vacation photos awaits you</h2>
+                            <h3 class="poster-subtitle">As soon as you finish Spark School</h3>
+                            <p class="poster-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <button class="poster-button">
+                                <span class="poster-button-title">Apply now</span>
+                                <span class="poster-button-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="frame">
+                <h2 class="about-title">Who attends Spark School?</h2>
+                <div class="about-items">
+                    <div class="about-item">
+                        <div class="about-item-icon icon1"></div>
+                        <h3 class="about-item-title">The Magnificents</h3>
+                        <p class="about-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <a href="#about" class="about-item-link">Read more</a>
+                    </div>
+                    <div class="about-item">
+                        <div class="about-item-icon icon2"></div>
+                        <h3 class="about-item-title">Cool People</h3>
+                        <p class="about-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <a href="#about" class="about-item-link">Read more</a>
+                    </div>
+                    <div class="about-item">
+                        <div class="about-item-icon icon3"></div>
+                        <h3 class="about-item-title">Not Džeko</h3>
+                        <p class="about-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <a href="#about" class="about-item-link">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="subscribe">
+            <div class="subscribe-parallax"></div>
+            <div class="frame subscribe-item">
+                <h2 class="subscribe-title">Seen enough? Seems it's about time to subscribe!</h2>
+                <div class="subscribe-area">
+                    <div class="subscribe-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    <div class="subscribe-controls">
+                        <label class="subscribe-controls-label">Your e-mail address</label>
+                        <div class="subscribe-controls-row">
+                            <input class="subscribe-controls-input" type="text" placeholder="Enter your e-mail address" />
+                            <button class="subscribe-controls-button"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="contact-map" id="contact-map"></div>
+            <div class="frame contact-area" id="contact">
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <h2 class="contact-item-title">Contact Us</h2>
+                            <h3 class="contact-item-description">You can find us at:</h3>
+                            <p class="contact-item-row">Mostar, Bleiburških žrtava b.b.</p>
+                        </div>
+                        <div class="contact-item">
+                            <form action="contactForm" method="post">
+                                <h2 class="contact-item-title">Write to Us</h2>
+                                <div class="contact-item-row">
+                                    <input class="contact-item-input" type="text" placeholder="Your name" />
+                                </div>
+                                <div class="contact-item-row">
+                                    <input class="contact-item-input" type="text" placeholder="E-mail address" />
+                                </div>
+                                <div class="contact-item-row">
+                                    <textarea class="contact-item-input contact-item-textarea" name="message" rows="7" cols="50" placeholder="Your message"></textarea>
+                                </div>
+                                <div class="contact-item-row">
+                                    <!-- Javascript course: Create XHR calls -->
+                                    <button class="contact-item-button">
+                                        <span class="contact-item-button-title">Send</span>
+                                        <span class="contact-item-button-icon"></span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="contact-item">
+                            <form id="ratingForm" action="" method="post">
+                                <h2 class="contact-item-title">Like Our Game</h2>
+                                <h3 class="contact-item-description">If you like our game you can rate in now:</h3>
+                                <div class="contact-item-row">
+                                    <!-- Javascript course: Create rating system on hover -->
+                                    <div class="contact-item-rating">
+                                        <div class="contact-item-rating-item active"></div>
+                                        <div class="contact-item-rating-item"></div>
+                                        <div class="contact-item-rating-item"></div>
+                                        <div class="contact-item-rating-item"></div>
+                                        <div class="contact-item-rating-item"></div>
+                                    </div>
+                                </div>
+                                <div class="contact-item-row">
+                                    <textarea class="contact-item-input contact-item-textarea" rows="4" cols="50"></textarea>
+                                </div>
+                                <div class="contact-item-row">
+                                    <!-- Javascript course: Create XHR calls -->
+                                    <button class="contact-item-button">
+                                        <span class="contact-item-button-title">Done</span>
+                                        <span class="contact-item-button-icon"></span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="frame clearfix">
+            <div class="copyright">
+                <span class="copyright-label">Copyright</span>
+                <span class="copyright-title">Spark School</span>
+            </div>
+            <nav class="social-menu">
+                <ul>
+                    <li>
+                        <a class="twitter" href="http://twitter.com" title="Twitter" target="blank"></a>
+                    </li>
+                    <li>
+                        <a class="instagram" href="http://instagram.com" title="Instagram"></a>
+                    </li>
+                    <li>
+                        <a class="facebook" href="http://facebook.com" title="Facebook"></a>
+                    </li>
+                    <li>
+                        <a class="google-plus" href="http://plus.google.com" title="Google Plus"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script src="js/site.js"></script>
+</body>
+</html>
